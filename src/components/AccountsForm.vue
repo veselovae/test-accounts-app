@@ -79,8 +79,8 @@ const updateAccount = (account: any) => store.updateAccount(account);
 }
 
 .add-account-btn {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
   cursor: pointer;
   padding: 0.25rem;
 }
