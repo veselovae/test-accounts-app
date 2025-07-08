@@ -1,6 +1,7 @@
 import { defineStore } from "pinia";
 import { nanoid } from "nanoid";
 import type { Account } from "../types";
+import {EAccountTypes} from "../constants";
 
 export const useAccountsStore = defineStore("accounts", {
     state: () => ({
@@ -8,7 +9,7 @@ export const useAccountsStore = defineStore("accounts", {
             {
                 id: nanoid(),
                 labels: [],
-                type: "Локальная",
+                type: EAccountTypes.LOCAL,
                 login: "",
                 password: "",
             },
@@ -19,7 +20,7 @@ export const useAccountsStore = defineStore("accounts", {
             this.accounts.push({
                 id: nanoid(),
                 labels: [],
-                type: "Локальная",
+                type: EAccountTypes.LOCAL,
                 login: "",
                 password: "",
             });
